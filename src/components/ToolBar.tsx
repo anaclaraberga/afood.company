@@ -8,11 +8,8 @@ const ToolBar = () => {
                 <div className="container-logo">
                     <Brand></Brand>
                 </div>
-                <div className="nav-elements">
-                    <div>
-                        Dashboard
-                    </div>
-                </div>
+                <div> | </div>
+                <div> Dashboard </div>
             </div>
         </nav>
     )

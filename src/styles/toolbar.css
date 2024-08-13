@@ -1,28 +1,36 @@
 .toolBar {
-    height: 4rem;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    
+    height: 2.5rem;
+    width: auto;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
-    padding-left: 5.813rem;
+    padding-left: 5rem;
+
+    box-shadow: 0em 0.1em 0em rgba(77, 77, 87, 0.25);
   }
 
 .container-elements {
     display: flex;
-    align-items: stretch;
-    justify-content: left;
+    flex-direction: row;
+
+    align-items: center;
+
     gap: 1em;
+
     width: fit-content;
     height: fit-content;
     
   }
 
 .container-logo {
-    align-content: center;
-}
-
-.nav-elements {
     display: flex;
     flex-direction: row;
+
     align-items: center;
 }
