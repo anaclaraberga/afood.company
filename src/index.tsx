@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
+import './styles/toolbar.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
 

@@ -1,0 +1,28 @@
+.toolBar {
+    height: 4rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 5.813rem;
+  }
+
+.container-elements {
+    display: flex;
+    align-items: stretch;
+    justify-content: left;
+    gap: 1em;
+    width: fit-content;
+    height: fit-content;
+    
+  }
+
+.container-logo {
+    align-content: center;
+}
+
+.nav-elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

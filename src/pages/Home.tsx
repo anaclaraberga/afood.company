@@ -1,7 +1,13 @@
+import { BrowserRouter } from 'react-router-dom';
+import ToolBar from '../components/ToolBar';
+
 export default function Home() {
     return (
-        <div>
-            Hallo! Wie geth's.
-        </div>
+        <BrowserRouter>
+            <ToolBar />
+            <div>
+                Hello, wie geth's?
+            </div>
+        </BrowserRouter>
     )
 }
