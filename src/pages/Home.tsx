@@ -1,10 +1,10 @@
 import { BrowserRouter } from 'react-router-dom';
-import ToolBar from '../components/ToolBar';
+import Header from '../components/Header';
 
 export default function Home() {
     return (
         <BrowserRouter>
-            <ToolBar />
+            <Header />
         </BrowserRouter>
     )
 }
