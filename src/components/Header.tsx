@@ -4,6 +4,7 @@ import "../styles/header.css";
 import "../styles/utility.css";
 import Button from "./Button";
 import Menu from "../assets/icons/icon.svg"
+import Close from "../assets/icons/close.svg"
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -62,9 +63,12 @@ export default function Home() {
                                 <li>
                                     <a href="#contact">Contato</a>
                                 </li>
+                                <li>
+                                    <a className="reverse-color" href="#">Login</a>
+                                </li>
                             </ul>
                             <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
-                                <img src={Logo} alt="ícone fechar menu" width={24} height={24} />
+                                <img src={Close} alt="ícone fechar menu" width={24} height={24} />
                             </span>
                         </div>
                     </div>
