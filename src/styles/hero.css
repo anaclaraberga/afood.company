@@ -50,19 +50,19 @@
             height: 82%;
             padding-left: 55%;
         }
+
+        .content p {
+            width: 80%;
+            align-self: center;
+        }
+        
+        .content {
+            gap: 2.5rem;
+        }
+        
+        .content > div :first-child {
+            width: 10.625rem;
+        }
         
     }
-}
-
-.content p {
-    width: 80%;
-    align-self: center;
-}
-
-.content {
-    gap: 2.5rem;
-}
-
-.content > div :first-child {
-    width: 10.625rem;
 }
