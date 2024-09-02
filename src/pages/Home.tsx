@@ -18,9 +18,9 @@ export default function Home() {
                 </span>
                 <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" />
                 <div className="container content">
-                <p className="desktop-only">
+                <h1 className="desktop-only">
                     Olá
-                </p>
+                </h1>
                 <h1>Comida de mãe direto no seu apê, é só pedir que entregamos para você!</h1>
                 <p>Já pensou em matar a saudade daquela comida caseira? O melhor de tudo, nossas receitas são 100% saudáveis, bora entrar no shape.
                 </p>
