@@ -1,3 +1,7 @@
 # About the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project aims to improve my knowledge of React and web design. The aFood company is completely fictitious, used for study purposes.
+
+## Tecnologies
+  React + Vite + Typescript
+
