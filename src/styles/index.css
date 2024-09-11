@@ -57,11 +57,22 @@ body {
 }
 
 h1, h2, h3 {
-  font-size: xx-large;
   line-height: 1.2;
   color: var(--text-color);
   font-weight: var(--fw-bold);
   letter-spacing: -0.04em;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: large;
 }
 
 a {
