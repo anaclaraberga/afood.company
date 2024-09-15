@@ -11,7 +11,7 @@ interface ICardProps {
 export default function Card({ src, text, subtext }: ICardProps) {
     
     return (
-        <section className="card">
+        <div className="card">
             <img src={src}></img>
 
             <h1>
@@ -21,6 +21,6 @@ export default function Card({ src, text, subtext }: ICardProps) {
             <div>
                 {subtext}
             </div>
-        </section>
+        </div>
     )
 }
