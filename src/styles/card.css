@@ -1,6 +1,8 @@
 .card {
-    position: absolutes;
-    display: grid;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     width: 20rem;
