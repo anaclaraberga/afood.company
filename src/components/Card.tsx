@@ -2,6 +2,8 @@ import "../styles/header.css";
 import "../styles/utility.css";
 import "../styles/card.css";
 
+import Button from "./Button";
+
 interface ICardProps {
     src: string;
     text: string;
@@ -12,15 +14,23 @@ export default function Card({ src, text, subtext }: ICardProps) {
     
     return (
         <div className="card">
-            <img src={src}></img>
 
-            <h1>
-                {text}
-            </h1>
+            <div className="card-text">
+                <img className="card-icon" src={src}></img>
 
-            <div>
-                {subtext}
+                <h2>
+                    {text}
+                </h2>
+
+                <div>
+                    {subtext}
+                </div>
             </div>
+
+            <span>
+                <Button text="Cadastre-se" />
+            </span>
+            
         </div>
     )
 }
