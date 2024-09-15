@@ -67,6 +67,10 @@ export default function Home() {
 
                     <div className="card-row">
                         <Card text='Comida quentinha' subtext='Peça agora!' src={FoodIcon}/>
+
+                        <Card text='Entrega em até 30 minutos!' subtext='Peça agora!' src={FoodIcon}/>
+
+                        <Card text='Frete grátis!' subtext='Peça agora!' src={FoodIcon}/>
                     </div>
             </section>
         </BrowserRouter>
