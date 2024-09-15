@@ -52,6 +52,8 @@ html {
 }
 
 body {
+  min-height: 100dvh;
+  height: 100%;
   background-color: var(--background-color);
   overflow-x: hidden;
 }
