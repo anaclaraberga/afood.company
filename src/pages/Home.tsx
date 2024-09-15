@@ -15,6 +15,7 @@ export default function Home() {
     return (
         <BrowserRouter>
             <Header />
+
             <section id="hero">
 
                 <span className="desktop-only">
@@ -48,9 +49,9 @@ export default function Home() {
                     </div>
             </section>
 
-            <section id="card section">
+            <section id="card-section">
 
-                    <div className="container content">
+                    <div>
                         <h4>
                             Sua comida
                         </h4>
@@ -62,7 +63,9 @@ export default function Home() {
                         <p>
                             Pensado e planejado para você.
                         </p>
-                        
+                    </div>
+
+                    <div className="card-row">
                         <Card text='Comida quentinha' subtext='Peça agora!' src={FoodIcon}/>
                     </div>
             </section>
