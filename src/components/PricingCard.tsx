@@ -15,25 +15,48 @@ export default function PricingCard({ text, subtext, price }: IPricingCardProps)
     return (
         <div id="pricing-card">
 
-            <div className="card-text">
-                <h1>
-                    {text}
-                </h1>
-
-                <p>
-                    {subtext}
-                </p>
-
-                <p className="card-price">
-                    {price}
-                </p>
+            <div className="top-content">
+                MELHOR PREÇO
             </div>
 
-            <p className="line"> </p>
+            <div className="pricing-content">
 
-            <span>
-                <Button text="Experimente!" />
-            </span>
+                <div className="card-text">
+                    <h1>
+                        {text}
+                    </h1>
+
+                    <p>
+                        {subtext}
+                    </p>
+
+                    <p className="card-price">
+                        {price}
+                    </p>
+                </div>
+
+                <p className="line"> </p>
+
+                <div className="card-text">
+
+                    <p>
+                        - Reembolso garantido.
+                    </p>
+
+                    <p>
+                        - Reembolso garantido.
+                    </p>
+
+                    <p>
+                        - Reembolso garantido.
+                    </p>
+                </div>
+
+                <span>
+                    <Button text="Experimente!" />
+                </span>
+
+            </div>
             
         </div>
     )
