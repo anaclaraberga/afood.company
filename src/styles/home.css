@@ -125,7 +125,7 @@
 
     padding: 5rem 0rem 5rem 0rem;
 
-    background-color: var(--primary-color);
+    background-color: var(--terciary-color);
 
     .pricing-text h1, h2, h3 {
         color: white;

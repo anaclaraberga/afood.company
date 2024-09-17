@@ -6,7 +6,9 @@ import HeroRectangleTwo from "../assets/images/rectangleTwo.svg";
 
 import Button from "../components/Button";
 import Card from "../components/Card";
-import "../styles/hero.css";
+import PricingCard from '../components/PricingCard';
+
+import "../styles/home.css";
 
 import FoodIcon from "../assets/icons/food.svg";
 
@@ -24,9 +26,9 @@ export default function Home() {
 
                 <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" />
 
-                    <div className="container content">
-                        <h1 className="desktop-only">
-                            Olá
+                    <div className="container-content">
+                        <h1>
+                            Olá!
                         </h1>
 
                         <h1>
@@ -49,12 +51,29 @@ export default function Home() {
                     </div>
             </section>
 
+            <section id="pricing-section">
+
+                    <div className='pricing-text'>
+                        <h2>
+                            Nossos preços
+                        </h2>
+
+                        <h1>
+                            que cabem no seu bolso
+                        </h1>
+                    </div>
+
+                    <div className="pricing-row">
+                        <PricingCard text='Frete grátis!' subtext='Peça agora!' price="25,00"/>
+                    </div>
+            </section>
+
             <section id="card-section">
 
-                    <div>
-                        <h4>
+                    <div className='card-primary-text'>
+                        <h2>
                             Sua comida
-                        </h4>
+                        </h2>
 
                         <h1>
                             do jeitinho que você precisa!
