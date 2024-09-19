@@ -16,7 +16,7 @@ export default function Card({ src, text, subtext }: ICardProps) {
         <div className="card">
 
             <div className="card-text">
-                <img className="card-icon" src={src}></img>
+                <img className="card-icon" src={src} alt="card icon"></img>
 
                 <h2>
                     {text}
