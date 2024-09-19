@@ -5,18 +5,19 @@ import "../styles/card.css";
 import Button from "./Button";
 
 interface IPricingCardProps {
+    callAtention: string;
     text: string;
     subtext: string;
     price: string;
 }
 
-export default function PricingCard({ text, subtext, price }: IPricingCardProps) {
+export default function PricingCard({ callAtention, text, subtext, price }: IPricingCardProps) {
     
     return (
         <div id="pricing-card">
 
             <div className="top-content">
-                MELHOR PREÇO
+                {callAtention}
             </div>
 
             <div className="pricing-content">
