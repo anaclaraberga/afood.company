@@ -18,26 +18,26 @@ export default function Home() {
                     <div className="desktop-only">
                         <ul className="flex gap-1">
                             <li>
-                                <a href="#">Home</a>
+                                <p>Home</p>
                             </li>
                             <li>
-                                <a href="#solution">Soluções</a>
+                                <p>Soluções</p>
                             </li>
                             <li>
-                                <a href="#testimonials">Depoimentos</a>
+                                <p>Depoimentos</p>
                             </li>
                             <li>
-                                <a href="#pricing">Preços</a>
+                                <p>Preços</p>
                             </li>
                             <li>
-                                <a href="#contact">Contato</a>
+                                <p>Contato</p>
                             </li>
                         </ul>
                     </div>
 
                     <div className="desktop-only">
                         <div className="flex items-center">
-                            <a className="reverse-color ml-lg" href="">Login</a>
+                            <p className="reverse-color ml-lg" >Login</p>
                             <Button text="Cadastre-se" />
                         </div>
                     </div>
@@ -48,22 +48,22 @@ export default function Home() {
                             <div className="container flex">
                                 <ul>
                                     <li>
-                                        <a href="#">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#solution">Soluções</a>
+                                        <a href="/">Soluções</a>
                                     </li>
                                     <li>
-                                        <a href="#testimonials">Depoimentos</a>
+                                        <a href="/">Depoimentos</a>
                                     </li>
                                     <li>
-                                        <a href="#pricing">Preços</a>
+                                        <a href="/">Preços</a>
                                     </li>
                                     <li>
-                                        <a href="#contact">Contato</a>
+                                        <a href="/">Contato</a>
                                     </li>
                                     <li>
-                                        <a className="reverse-color" href="#">Login</a>
+                                        <a className="reverse-color" href="/">Login</a>
                                     </li>
                                 </ul>
                                 <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
