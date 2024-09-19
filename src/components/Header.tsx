@@ -18,26 +18,26 @@ export default function Home() {
                     <div className="desktop-only">
                         <ul className="flex gap-1">
                             <li>
-                                <p>Home</p>
+                                <a href="/">Home</a>
                             </li>
                             <li>
-                                <p>Soluções</p>
+                                <a href="/">Soluções</a>
                             </li>
                             <li>
-                                <p>Depoimentos</p>
+                                <a href="/">Depoimentos</a>
                             </li>
                             <li>
-                                <p>Preços</p>
+                                <a href="/">Preços</a>
                             </li>
                             <li>
-                                <p>Contato</p>
+                                <a href="/">Contato</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="desktop-only">
                         <div className="flex items-center">
-                            <p className="reverse-color ml-lg" >Login</p>
+                            <a className="reverse-color ml-lg" href="/" >Login</a>
                             <Button text="Cadastre-se" />
                         </div>
                     </div>
