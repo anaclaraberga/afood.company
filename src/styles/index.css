@@ -28,7 +28,7 @@
     --light-gray: #F8F8F8;
     --primary-color: #E44444;
     --secondary-color: #993838;
-    --terciary-color: #e24c4c;
+    --tertiary-color: #e25151;
     --alternative-color: #c31010;
 
     --fs-sm: 0.875rem;
@@ -112,4 +112,10 @@ ul {
       --py-xl: 5rem;
       --pg-lg: 2rem;
   }
+}
+
+.red-color {
+
+  font-weight: 800;
+  color: var(--tertiary-color);
 }
