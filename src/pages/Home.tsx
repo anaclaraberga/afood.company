@@ -32,11 +32,11 @@ export default function Home() {
                         </h1>
 
                         <h1>
-                            Comida de mãe direto no seu apê, é só pedir que entregamos para você!
+                            Delivery sem complicação é <span className='red-color'>afood</span>, só pedir que entregamos para você!
                         </h1>
 
                         <p>
-                            Já pensou em matar a saudade daquela comida caseira? O melhor de tudo, nossas receitas são 100% saudáveis, bora entrar no shape.
+                            Precisando de um delivery rápido e barato para sua empresa? Somos a solução, nossa equipe conta com os melhores <span className='red-color'>motoboys</span> da cidade.
                         </p>
 
                         <div className="flex gap-1">
@@ -64,7 +64,11 @@ export default function Home() {
                     </div>
 
                     <div className="pricing-row">
-                        <PricingCard text='Frete grátis!' subtext='Peça agora!' price="25,00"/>
+                        <PricingCard callAtention='PRA INICIAR' text='Pacote mensal' subtext='Valor mensal' price="R$49,90"/>
+
+                        <PricingCard callAtention='MELHOR PREÇO' text='Pacote anual' subtext='Valor mensal' price="R$24,90"/>
+
+                        <PricingCard callAtention='O BÁSICO' text='Pacote semanal' subtext='Valor semanal' price="R$39,90"/>
                     </div>
             </section>
 
@@ -85,11 +89,13 @@ export default function Home() {
                     </div>
 
                     <div className="card-row">
-                        <Card text='Comida quentinha' subtext='Peça agora!' src={FoodIcon}/>
+                        <Card text='Pedido que chega quentinho' subtext='Na velocidade da luz!' src={FoodIcon}/>
 
-                        <Card text='Entrega em até 30 minutos!' subtext='Peça agora!' src={FoodIcon}/>
+                        <div className='best-price'>
+                            <Card text='Entrega em até 30 minutos!' subtext='Garanta satisfação!' src={FoodIcon}/>
+                        </div>
 
-                        <Card text='Frete grátis!' subtext='Peça agora!' src={FoodIcon}/>
+                        <Card text='Barato, ágil e econômico!' subtext='O melhor para seu bolso!' src={FoodIcon}/>
                     </div>
             </section>
         </BrowserRouter>
