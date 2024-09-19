@@ -11,6 +11,8 @@ import PricingCard from '../components/PricingCard';
 import "../styles/home.css";
 
 import FoodIcon from "../assets/icons/food.svg";
+import DeliverIcon from "../assets/icons/deliver.svg";
+import PigIcon from "../assets/icons/pig-money.svg";
 
 
 export default function Home() {
@@ -64,11 +66,19 @@ export default function Home() {
                     </div>
 
                     <div className="pricing-row">
-                        <PricingCard callAtention='PRA INICIAR' text='Pacote mensal' subtext='Valor mensal' price="R$49,90"/>
 
-                        <PricingCard callAtention='MELHOR PREÇO' text='Pacote anual' subtext='Valor mensal' price="R$24,90"/>
+                        <div className='t-1'>
+                            <PricingCard callAtention='PRA COMEÇAR' text='Pacote mensal' subtext='Valor mensal' price="R$49,90"/>
+                        </div>
 
-                        <PricingCard callAtention='O BÁSICO' text='Pacote semanal' subtext='Valor semanal' price="R$39,90"/>
+                        <div className='t-2'>
+                            <PricingCard callAtention='MELHOR PREÇO' text='Pacote anual' subtext='Valor mensal' price="R$24,90"/>
+                        </div>
+
+                        <div className='t-1'>
+                            <PricingCard callAtention='O BÁSICO' text='Pacote semanal' subtext='Valor semanal' price="R$39,90"/>
+                        </div>
+
                     </div>
             </section>
 
@@ -89,13 +99,17 @@ export default function Home() {
                     </div>
 
                     <div className="card-row">
-                        <Card text='Pedido que chega quentinho' subtext='Na velocidade da luz!' src={FoodIcon}/>
+                        <div className='t-1'>
+                            <Card text='Pedido que chega quentinho' subtext='Na velocidade da luz!' src={DeliverIcon}/>
+                        </div>
 
-                        <div className='best-price'>
+                        <div className='t-2'>
                             <Card text='Entrega em até 30 minutos!' subtext='Garanta satisfação!' src={FoodIcon}/>
                         </div>
 
-                        <Card text='Barato, ágil e econômico!' subtext='O melhor para seu bolso!' src={FoodIcon}/>
+                        <div className='t-1'>
+                            <Card text='Barato, ágil e econômico!' subtext='O melhor para seu bolso!' src={PigIcon}/>
+                        </div>
                     </div>
             </section>
         </BrowserRouter>

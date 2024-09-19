@@ -41,11 +41,11 @@ export default function PricingCard({ callAtention, text, subtext, price }: IPri
                 <div className="card-text">
 
                     <p>
-                        - Reembolso garantido.
+                        - Desconto de 5% no Pix.
                     </p>
 
                     <p>
-                        - Reembolso garantido.
+                        - 2 entregas gratuítas.
                     </p>
 
                     <p>
