@@ -243,3 +243,119 @@
         }
     }
 }
+
+#feedback-section {
+    text-align: center;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 5rem 0rem 5rem 0rem;
+
+    background-color: var(--tertiary-color);
+
+    @media (width >= 800px) {
+ 
+        .t-1 {
+            scale: 0.8;
+
+            .btn-primary {
+                background: var(--second-text-color);
+                color: var(--light-text-color);
+            }
+
+            #pricing-card {
+
+                background-color: #eeeeee;
+
+                .top-content {
+                    color: var(--second-text-color);
+
+                    background-color: #cecece;
+                }
+
+                h1, h2, h3, p {
+                    color: var(--second-text-color);
+                }
+            }
+        }
+    
+        .t-1:hover {
+            scale: 1;
+            animation: backwards;
+            opacity: 1;
+
+            transition: 200ms;
+
+            .btn-primary {
+                background: var(--primary-color);
+                color: var(--light-text-color);
+            }
+
+            #pricing-card {
+
+                background-color: white;
+
+                .top-content {
+                    color: white;
+
+                    background-color: var(--tertiary-color);
+                }
+
+                h1 {
+                    color: var(--tertiary-color);
+                }
+
+                .card-price {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    
+        .t-2:hover {
+            scale: 1.2;
+            animation: backwards;
+            opacity: 1;
+
+            transition: 200ms;
+
+            h1 {
+                color: var(--tertiary-color);
+            }
+        }
+    }
+}
+
+.feedback-row {
+    min-width: 100%;
+    width: 100dvh;
+    height: auto;
+
+    padding: 5rem 0rem 5rem 0rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    @media (width <= 800px) {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+        align-content: center;
+
+        gap: 2rem;
+    }
+}
+
+.feedback-text h1, h2, h3, p {
+    color: white;
+}

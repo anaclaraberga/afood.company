@@ -112,6 +112,39 @@ export default function Home() {
                         </div>
                     </div>
             </section>
+
+            <section id="feedback-section">
+
+                    <div className='feedback-text'>
+                        <h3>
+                            Nossos preços
+                        </h3>
+
+                        <h1>
+                            Cada cliente importa
+                        </h1>
+
+                        <p>
+                            Com um preço que cabe no seu bolso, melhore seu atendimento delivery com a afood.
+                        </p>
+                    </div>
+
+                    <div className="feedback-row">
+
+                        <div className='t-1'>
+                            <PricingCard callAtention='PRA COMEÇAR' text='Pacote mensal' subtext='Valor mensal' price="R$49,90"/>
+                        </div>
+
+                        <div className='t-2'>
+                            <PricingCard callAtention='MELHOR PREÇO' text='Pacote anual' subtext='Valor mensal' price="R$24,90"/>
+                        </div>
+
+                        <div className='t-1'>
+                            <PricingCard callAtention='O BÁSICO' text='Pacote semanal' subtext='Valor semanal' price="R$39,90"/>
+                        </div>
+
+                    </div>
+            </section>
         </BrowserRouter>
     )
 }
