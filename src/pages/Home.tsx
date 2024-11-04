@@ -7,6 +7,7 @@ import HeroRectangleTwo from "../assets/images/rectangleTwo.svg";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import PricingCard from '../components/PricingCard';
+import FeedbackCard from '../components/FeedbackCard';
 
 import "../styles/home.css";
 
@@ -131,16 +132,16 @@ export default function Home() {
 
                     <div className="feedback-row">
 
-                        <div className='t-1'>
-                            <PricingCard callAtention='PRA COMEÇAR' text='Pacote mensal' subtext='Valor mensal' price="R$49,90"/>
+                        <div>
+                            <FeedbackCard callAtention='Manuel Gomes' text='Pacote mensal' subtext='Valor mensal'/>
                         </div>
 
-                        <div className='t-2'>
-                            <PricingCard callAtention='MELHOR PREÇO' text='Pacote anual' subtext='Valor mensal' price="R$24,90"/>
+                        <div>
+                            <FeedbackCard callAtention='Guilherme Ricardo' text='Pacote mensal' subtext='Valor mensal'/>
                         </div>
 
-                        <div className='t-1'>
-                            <PricingCard callAtention='O BÁSICO' text='Pacote semanal' subtext='Valor semanal' price="R$39,90"/>
+                        <div>
+                            <FeedbackCard callAtention='PRA COMEÇAR' text='Pacote mensal' subtext='Valor mensal'/>
                         </div>
 
                     </div>

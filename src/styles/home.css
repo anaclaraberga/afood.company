@@ -76,7 +76,55 @@
     justify-content: center;
 
     padding: 5rem 0rem 5rem 0rem;
+}
 
+.card-primary-text {
+    h1 {
+        color: var(--text-color);
+    }
+
+    h2 {
+        color: var(--primary-color);
+    }
+}
+
+.card-row {
+    @media (width <= 800px) {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+        align-content: center;
+
+        gap: 2rem;
+    }
+
+    min-width: 100%;
+    width: 100dvh;
+    height: auto;
+
+    align-items: center;
+
+    padding: 5rem 0rem 5rem 0rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 2rem;
+
+    h2 {
+        color: var(--text-color);
+    }
+
+    @media (width >= 800px) {
+        .t-1 {
+            scale: 0.9;
+        }
+    }
 }
 
 #pricing-section {
@@ -195,55 +243,6 @@
     color: white;
 }
 
-.card-primary-text {
-    h1 {
-        color: var(--text-color);
-    }
-
-    h2 {
-        color: var(--primary-color);
-    }
-}
-
-.card-row {
-    @media (width <= 800px) {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        text-align: center;
-        align-content: center;
-
-        gap: 2rem;
-    }
-
-    min-width: 100%;
-    width: 100dvh;
-    height: auto;
-
-    align-items: center;
-
-    padding: 5rem 0rem 5rem 0rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    gap: 2rem;
-
-    h2 {
-        color: var(--text-color);
-    }
-
-    @media (width >= 800px) {
-        .t-1 {
-            scale: 0.9;
-        }
-    }
-}
-
 #feedback-section {
     text-align: center;
 
@@ -254,77 +253,6 @@
     padding: 5rem 0rem 5rem 0rem;
 
     background-color: var(--tertiary-color);
-
-    @media (width >= 800px) {
- 
-        .t-1 {
-            scale: 0.8;
-
-            .btn-primary {
-                background: var(--second-text-color);
-                color: var(--light-text-color);
-            }
-
-            #pricing-card {
-
-                background-color: #eeeeee;
-
-                .top-content {
-                    color: var(--second-text-color);
-
-                    background-color: #cecece;
-                }
-
-                h1, h2, h3, p {
-                    color: var(--second-text-color);
-                }
-            }
-        }
-    
-        .t-1:hover {
-            scale: 1;
-            animation: backwards;
-            opacity: 1;
-
-            transition: 200ms;
-
-            .btn-primary {
-                background: var(--primary-color);
-                color: var(--light-text-color);
-            }
-
-            #pricing-card {
-
-                background-color: white;
-
-                .top-content {
-                    color: white;
-
-                    background-color: var(--tertiary-color);
-                }
-
-                h1 {
-                    color: var(--tertiary-color);
-                }
-
-                .card-price {
-                    color: var(--primary-color);
-                }
-            }
-        }
-    
-        .t-2:hover {
-            scale: 1.2;
-            animation: backwards;
-            opacity: 1;
-
-            transition: 200ms;
-
-            h1 {
-                color: var(--tertiary-color);
-            }
-        }
-    }
 }
 
 .feedback-row {
@@ -332,7 +260,7 @@
     width: 100dvh;
     height: auto;
 
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 5rem;
 
     display: flex;
     flex-direction: row;
@@ -353,9 +281,34 @@
         align-content: center;
 
         gap: 2rem;
+
+        padding: 2rem;
     }
 }
 
-.feedback-text h1, h2, h3, p {
-    color: white;
+#feedback-card {
+    height: 25rem;
+    background-color: white;
+
+    display:flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0.5rem;
+
+    border-radius: 1rem;
+
+    p, h1, h2, h3 {
+        color: var(--text-color);
+    }
+
+    img {
+        justify-content: center;
+    }
+
+    @media (width >= 800px) {
+        
+    }
 }

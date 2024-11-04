@@ -3,22 +3,23 @@ import "../styles/utility.css";
 import "../styles/card.css";
 
 import ProfileImage from "../assets/images/testimonial-user-cover-001.svg";
+import Star from "../assets/icons/star.svg"
+import StarOuter from "../assets/icons/star-out.svg"
 
 interface IFeedbackCardProps {
     callAtention: string;
     text: string;
     subtext: string;
-    price: string;
 }
 
-export default function FeedbackCard({ callAtention, text, subtext, price }: IFeedbackCardProps) {
+export default function FeedbackCard({ callAtention, text, subtext }: IFeedbackCardProps) {
     
     return (
         <div id="feedback-card">
 
         <img src={ProfileImage} alt="Imagem perfil cliente" />
         
-        <span className="testimony">
+        <span className="feedback">
             <p>
                 Certamente o mercado chinês de eletricos está bombando, só existe
                 uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço.

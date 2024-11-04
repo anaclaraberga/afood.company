@@ -22,7 +22,7 @@ export default function Card({ src, text, subtext }: ICardProps) {
                     {text}
                 </h2>
 
-                <div>
+                <div className="card-subtext">
                     {subtext}
                 </div>
             </div>
