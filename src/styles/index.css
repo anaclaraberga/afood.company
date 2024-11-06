@@ -63,7 +63,6 @@ body {
 
 h1, h2, h3 {
   line-height: 1.2;
-  color: var(--text-color);
   font-weight: var(--fw-bold);
   letter-spacing: -0.04em;
 }

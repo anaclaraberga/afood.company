@@ -138,6 +138,10 @@
 
     background-color: var(--tertiary-color);
 
+    .pricing-text {
+        color: white;
+    }
+
     @media (width >= 800px) {
  
         .t-1 {
@@ -237,10 +241,6 @@
 
         gap: 2rem;
     }
-}
-
-.pricing-text h1, h2, h3 {
-    color: white;
 }
 
 #feedback-section {
