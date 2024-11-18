@@ -91,6 +91,7 @@
 }
 
 #feedback-card {
+    max-width: 25rem;
     height: 25rem;
     background-color: white;
 
@@ -104,6 +105,8 @@
 
     border-radius: 1rem;
 
+    perspective: 10rem;
+
     p, h1, h2, h3 {
         color: var(--text-color);
     }
@@ -115,4 +118,9 @@
     @media (width >= 800px) {
         
     }
+}
+
+#feedback-card:hover {
+    transform: translateY(-20px);
+    transition: 0.5s ease-out;
 }

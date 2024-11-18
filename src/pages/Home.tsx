@@ -14,9 +14,28 @@ import "../styles/home.css";
 import FoodIcon from "../assets/icons/food.svg";
 import DeliverIcon from "../assets/icons/deliver.svg";
 import PigIcon from "../assets/icons/pig-money.svg";
+import { useState } from 'react';
 
 
 export default function Home() {
+    const [email, setEmail] = useState('')
+    const [content, setContent] = useState('')
+
+    const submitForm = () => {
+        fetch('/api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ mailTo: email, content: content })
+           })
+           .then(response => response.json())
+           .then(data => {
+            alert('Email enviado com sucesso')
+            console.log('Sucesso:', data)})
+           .catch(error => console.error('Erro:', error));
+    }
+
     return (
         <BrowserRouter>
             <Header />
@@ -132,19 +151,63 @@ export default function Home() {
 
                     <div className="feedback-row">
 
-                        <div>
-                            <FeedbackCard callAtention='Manuel Gomes' text='Pacote mensal' subtext='Valor mensal'/>
-                        </div>
+                        <div className='feedback-slide-track'>
+                            <div>
+                                <FeedbackCard callAtention='Manuel Gomes' text='Pacote mensal' subtext='Valor mensal'/>
+                            </div>
 
-                        <div>
-                            <FeedbackCard callAtention='Guilherme Ricardo' text='Pacote mensal' subtext='Valor mensal'/>
-                        </div>
+                            <div>
+                                <FeedbackCard callAtention='Guilherme Ricardo' text='Pacote mensal' subtext='Valor mensal'/>
+                            </div>
 
-                        <div>
-                            <FeedbackCard callAtention='PRA COMEÇAR' text='Pacote mensal' subtext='Valor mensal'/>
+                            <div>
+                                <FeedbackCard callAtention='PRA COMEÇAR' text='Pacote mensal' subtext='Valor mensal'/>
+                            </div>
+
+                            {/**
+                             * Duplicated cards.
+                            */}
+
+                            <div>
+                                <FeedbackCard callAtention='Manuel Gomes' text='Pacote mensal' subtext='Valor mensal'/>
+                            </div>
+
+                            <div>
+                                <FeedbackCard callAtention='Guilherme Ricardo' text='Pacote mensal' subtext='Valor mensal'/>
+                            </div>
+
+                            <div>
+                                <FeedbackCard callAtention='PRA COMEÇAR' text='Pacote mensal' subtext='Valor mensal'/>
+                            </div>
                         </div>
 
                     </div>
+            </section>
+
+            <section id="email-section">
+
+                <div className='card-primary-text'>
+                    <h2>
+                        Envie sua dúvida
+                    </h2>
+
+                    <h1>
+                        Entre em contato conosco
+                    </h1>
+
+                    <p>
+                        Estamos a disposição para te ajudar.
+                    </p>
+                </div>
+
+                <div className='email-input'>
+
+                    <input type='email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email'></input>            
+                    <input type='text' value={content} onChange={(e) => setContent(e.target.value)} placeholder='Mensagem'></input>
+
+                    <button className='btn-primary' type='button' onClick={submitForm}>Enviar</button>
+                </div>
+
             </section>
         </BrowserRouter>
     )

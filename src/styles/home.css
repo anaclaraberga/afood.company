@@ -97,19 +97,6 @@
 }
 
 .card-row {
-    @media (width <= 800px) {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        text-align: center;
-        align-content: center;
-
-        gap: 2rem;
-    }
-
     min-width: 100%;
     width: 100dvh;
     height: auto;
@@ -132,6 +119,19 @@
         .t-1 {
             scale: 0.9;
         }
+    }
+
+    @media (width <= 800px) {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+        align-content: center;
+
+        gap: 2rem;
     }
 }
 
@@ -271,18 +271,23 @@
     background-color: var(--tertiary-color);
 }
 
+.feedback-text {
+    color: white;
+}
+
 .feedback-row {
-    min-width: 100%;
-    width: 100dvh;
-    height: auto;
+    width: 80%;
 
-    padding: 5rem;
+    position: relative;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding: 4rem;
 
-    align-items: center;
+    justify-self: center;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
 
     gap: 2rem;
 
@@ -302,6 +307,90 @@
     }
 }
 
-.feedback-text {
-    color: white;
+.feedback-slide-track {
+    gap: 2rem;
+
+    display: flex;
+    width: calc(25rem * 6);
+
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-25rem * 3));
+	}
+}
+
+.feedback-slide-track:hover {
+    animation-play-state: paused;
+}
+
+#email-section {
+    text-align: center;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 5rem 0rem 5rem 0rem;
+
+    gap: 2rem;
+
+    .email-input {
+        display: flex;
+        flex-direction: column;
+
+        padding: 2rem 20rem 2rem 20rem;
+
+        gap: 2rem;
+    }
+
+    input {
+        
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(206, 207, 212);
+        color: rgb(9, 30, 66);
+
+        cursor: text;
+
+        border-radius: 0.6rem;
+        border-width: 1px;
+        border-style: solid;
+        box-sizing: border-box;
+        
+        font-size: 14px;
+        transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+        line-height: 1.42857;
+
+        height: 3.6rem;
+
+        :hover{
+            background-color: rgb(235, 236, 240);
+        }
+        :focus{
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(76, 154, 255);
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: normal;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        width: 50%;
+
+        align-self: center;
+    }   
 }
