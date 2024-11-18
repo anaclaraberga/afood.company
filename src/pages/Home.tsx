@@ -1,4 +1,3 @@
-
 import Header from '../components/Header';
 import HeroRectangleOne from "../assets/images/rectangleOne.svg";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.svg";
@@ -8,15 +7,14 @@ import Card from "../components/Card";
 import PricingCard from '../components/PricingCard';
 import FeedbackCard from '../components/FeedbackCard';
 
-import '../styles/home.css';
-import '../styles/header.css';
-import '../styles/index.css';
-
 import FoodIcon from "../assets/icons/food.svg";
 import DeliverIcon from "../assets/icons/deliver.svg";
 import PigIcon from "../assets/icons/pig-money.svg";
 import { useState } from 'react';
 
+import '../styles/home.css';
+import '../styles/header.css';
+import '../styles/index.css';
 
 export default function Home() {
     
